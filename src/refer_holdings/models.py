@@ -7,9 +7,11 @@ class Series(models.Model):
         max_length = 100,
         blank = False)
     
+    # Строковое представление класса
     def __str__(self) -> str:
         return f'Серия {self.series}'
     
+    # Для отображения в мета-полях (записях)
     class Meta:
         verbose_name = "Серия"
         verbose_name_plural = "Серии"

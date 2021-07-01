@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from refer_holdings import views as re_ho_veiw
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', re_ho_veiw.catalogues, name = "catalogues_list"),
+
 ]
